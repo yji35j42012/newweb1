@@ -16,7 +16,7 @@
 	<script type="text/javascript" src="/func/api_rec/api_demo.js"></script>
 </head>
 
-<body class="unScroll" ontouchstart=""  onmouseover="" onload="onload();">
+<body class="unScroll"  onload="onload();">
 	<!-- 不能滑動 在body 加class="unScroll" -->
 	<!-- 最上列 -->
 	<div class="header">
@@ -685,5 +685,6 @@
 	<script>
 		var langx=findGetParameter("langx");
 		load_art(document, artjson,langx);
+		document.addEventListener("touchstart", function() {},false);
 	</script>
 </html>
