@@ -16,7 +16,7 @@
 	<script type="text/javascript" src="/func/api_rec/api_demo.js"></script>
 </head>
 
-<body class="unScroll"  onload="onload();">
+<body class="unScroll" ontouchstart=""  onload="onload();">
 	<!-- 不能滑動 在body 加class="unScroll" -->
 	<!-- 最上列 -->
 	<div class="header">
@@ -266,7 +266,7 @@
 
 	<!-- 服務項目 -->
 	<div id="hm_3" class="service">
-		<div class="service_pic" >
+		<div class="service_pic">
 			<!-- 煙火動畫 -->
 			<div class="fireworks">
 				<div class="fire fire1">
@@ -685,5 +685,6 @@
 	<script>
 		var langx=findGetParameter("langx");
 		load_art(document, artjson,langx);
+		// document.addEventListener("touchstart", function() {},false);
 	</script>
 </html>
